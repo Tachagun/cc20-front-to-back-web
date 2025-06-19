@@ -1,0 +1,27 @@
+import {Link} from "react-router"
+
+
+// rfce
+function MainNav() {
+  return (
+    <div className="flex 
+    justify-between border bg-black
+     text-white px-8 py-2">
+      
+      <div className="flex gap-4">
+        <Link className="rounded bg-gray-500 px-1 font-bold" to="/">LOGO</Link>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+      </div>
+
+      <div className="flex gap-4">
+        <Link to="/register">Register</Link>
+        <Link to="/login">Login</Link>
+        
+      </div>
+
+    </div>
+  );
+}
+
+export default MainNav;
